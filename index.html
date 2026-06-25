@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background-color: darkseagreen;
+      color: black;
+      font-family: sans-serif;
+    }
+    h2 {
+      color: brown;
+    }
+  </style>
+  <body>
+    <h2>Course Registration Form</h2>
+    <table>
+      <tr>
+        <td><label for="Fname">First Name</label></td>
+        <td>
+          <input name="Fname" id="Fname" type="text" placeholder="EX: Madhu" />
+        </td>
+      </tr>
+      <tr>
+        <td><label for="Sname">Sur Name</label></td>
+        <td>
+          <input name="Sname" id="Sname" type="text" placeholder="EX: E" />
+        </td>
+      </tr>
+      <tr>
+        <td><label for="mobile">Moile Number</label></td>
+        <td>
+          <input
+            name="mobile"
+            id="mobile"
+            type="tel"
+            placeholder="EX: 678-985-8976"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td><label for="email">Email</label></td>
+        <td>
+          <input
+            name="email"
+            id="email"
+            type="email"
+            placeholder="EX: example@gmail.com"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td><label for="password">Password</label></td>
+        <td>
+          <input
+            name="password"
+            id="password"
+            type="password"
+            placeholder="Min 8 characters"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td><label for="Cpassword">Confirm Password</label></td>
+        <td>
+          <input
+            name="Cpassword"
+            id="Cpassword"
+            type="password"
+            placeholder="Re-enter password"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td><label for="date">Date of Birth</label></td>
+        <td><input name="date" id="date" type="date" /></td>
+      </tr>
+      <tr>
+        <td><label for="age">Age</label></td>
+        <td>
+          <input
+            name="age"
+            id="age"
+            type="number"
+            min="18"
+            max="65"
+            placeholder="18-65"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td><label for="gender">Gender</label></td>
+        <td>
+          <input name="gender" id="gender" value="M" type="radio" /><label
+            for=""
+            >Male</label
+          >
+          <input name="gender" id="gender" value="F" type="radio" /><label
+            for=""
+            >Female</label
+          >
+          <input name="gender" id="gender" value="O" type="radio" /><label
+            for=""
+            >Others</label
+          >
+        </td>
+      </tr>
+      <tr>
+        <td><label for="Country">Select Country</label></td>
+        <td>
+          <select name="country" id="country">
+            <option value="--Select Country--">--Select Country--</option>
+            <option value="India">India</option>
+            <option value="Uk">Uk</option>
+            <option value="Japan">Japan</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="">Upload Picture</label></td>
+        <td>
+          <input type="file" />
+        </td>
+      </tr>
+    </table>
+    <h2>Course Details</h2>
+    <table>
+      <tr>
+        <td><label for="course">Select Course*</label></td>
+        <td>
+          <select name="course" id="course">
+            <option value="--Select--">--Select--</option>
+            <option value="Java Full Stack Development">
+              Java Full Stack Development
+            </option>
+            <option value="Python Full Stack Development">
+              Python Full Stack Development
+            </option>
+            <option value="Data Analytics">Data Analytics</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="Delivery">Delivery Mode*</label></td>
+        <td>
+          <input name="Delivery" id="Delivery" type="radio" value="On" /><label
+            for=""
+            >Online</label
+          >
+          <input name="Delivery" id="Delivery" type="radio" value="Of" /><label
+            for=""
+            >Offline</label
+          >
+        </td>
+      </tr>
+      <tr>
+        <td><label for="">Institute Name</label></td>
+        <td><input type="text" readonly disabled value="Tap Academy" /></td>
+      </tr>
+      <tr>
+        <td><label for="">Comments</label></td>
+        <td>
+          <input
+            type="text"
+            name="Comments"
+            id="Comments"
+            placeholder="Any additional comments or questions...."
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <td><button type="reset">Clear Form</button></td>
+      </tr>
+      <tr>
+        <td><button type="submit">Submit Registration</button></td>
+      </tr>
+    </table>
+  </body>
+</html>
